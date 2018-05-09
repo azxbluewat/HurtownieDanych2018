@@ -1,0 +1,76 @@
+
+SELECT IDENTITY(INT,1,1) AS ID,*
+INTO HD.dbo.Dane
+FROM [HD].[dbo].[Raw Data];
+
+ UPDATE [HD].[dbo].[Dane] SET [TVDate] = REPLACE([TVDate], '"', '');
+ UPDATE [HD].[dbo].[Dane] SET [TVDate] = REPLACE([TVDate], '%', '');
+
+ UPDATE [HD].[dbo].[Dane] SET [Channel] = REPLACE([Channel], '"', '');
+
+ UPDATE [HD].[dbo].[Dane] SET [Description] = REPLACE([Description], '"', '');
+
+ UPDATE [HD].[dbo].[Dane] SET [2nd Description] = REPLACE([2nd Description], '"', '');
+ 
+ UPDATE [HD].[dbo].[Dane] SET [Start time] = REPLACE([Start time], '"', '');
+ UPDATE [HD].[dbo].[Dane] SET [Start time] = REPLACE([Start time], ' ', '');
+
+ UPDATE [HD].[dbo].[Dane] SET [Duration] = REPLACE([Duration], '"', '');
+ UPDATE [HD].[dbo].[Dane] SET [Duration] = REPLACE([Duration], ' ', '');
+
+ UPDATE [HD].[dbo].[Dane] SET [Variable Target] = REPLACE([Variable Target], '"', '');
+ UPDATE [HD].[dbo].[Dane] SET [Variable Target] = REPLACE([Variable Target], ' ', '');
+ UPDATE [HD].[dbo].[Dane] SET [Variable Target] = REPLACE([Variable Target], '%', '');
+ UPDATE [HD].[dbo].[Dane] SET [Variable Target] = REPLACE([Variable Target], '[Not cons. - TH: 0min.]', '');
+ UPDATE [HD].[dbo].[Dane] SET [Variable Target] = REPLACE([Variable Target], '[Notcons.-TH:0min.]', '');
+
+ UPDATE [HD].[dbo].[Dane] SET [Total Individuals] = REPLACE([Total Individuals], '%', '');
+ UPDATE [HD].[dbo].[Dane] SET [Total Individuals] = REPLACE([Total Individuals], ' ', '');
+
+ UPDATE [HD].[dbo].[Dane] SET [Podgrupa] = REPLACE([Podgrupa], '%', '');
+ UPDATE [HD].[dbo].[Dane] SET [Podgrupa] = REPLACE([Podgrupa], ' ', '');
+
+ UPDATE [HD].[dbo].[Dane] SET [A16-49] = REPLACE([A16-49], '%', '');
+ UPDATE [HD].[dbo].[Dane] SET [A16-49] = REPLACE([A16-49], ' ', '');
+
+ UPDATE [HD].[dbo].[Dane] SET [M16-49] = REPLACE([M16-49], '%', '');
+ UPDATE [HD].[dbo].[Dane] SET [M16-49] = REPLACE([M16-49], ' ', '');
+
+ UPDATE [HD].[dbo].[Dane] SET [A4-15] = REPLACE([A4-15], '%', '');
+ UPDATE [HD].[dbo].[Dane] SET [A4-15] = REPLACE([A4-15], ' ', '');
+
+ 
+ UPDATE [HD].[dbo].[Dane] SET [A4-9] = REPLACE([A4-9], '%', '');
+ UPDATE [HD].[dbo].[Dane] SET [A4-9] = REPLACE([A4-9], ' ', '');
+
+ALTER TABLE [HD].[dbo].[Dane] DROP COLUMN [Column 13];
+
+
+DECLARE @v VARCHAR(100);
+ 
+UPDATE [HD].[dbo].[Dane] WITH(TABLOCKX)
+SET @v = [TVDate] = CASE WHEN [TVDate] = '' THEN @v ELSE [TVDate] END
+OPTION(MAXDOP 1);
+ 
+UPDATE [HD].[dbo].[Dane] WITH(TABLOCKX)
+SET @v = [Channel] = CASE WHEN [Channel] = '' THEN @v ELSE [Channel] END
+OPTION(MAXDOP 1);
+ 
+UPDATE [HD].[dbo].[Dane] WITH(TABLOCKX)
+SET @v = [Description] = CASE WHEN [Description] = '' THEN @v ELSE [Description] END
+OPTION(MAXDOP 1);
+ 
+UPDATE [HD].[dbo].[Dane] WITH(TABLOCKX)
+SET @v = [2nd Description] = CASE WHEN [2nd Description] = '' THEN @v ELSE [2nd Description] END
+OPTION(MAXDOP 1);
+ 
+UPDATE [HD].[dbo].[Dane] WITH(TABLOCKX)
+SET @v = [Start time] = CASE WHEN [Start time] = '' THEN @v ELSE [Start time] END
+OPTION(MAXDOP 1);
+
+UPDATE [HD].[dbo].[Dane] WITH(TABLOCKX)
+SET @v = [Duration] = CASE WHEN [Duration] = '' THEN @v ELSE [Duration] END
+OPTION(MAXDOP 1);
+ 
+SELECT * FROM [HD].[dbo].[Dane];
+
