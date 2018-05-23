@@ -1,0 +1,638 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="641c97ec-718e-4895-9606-8cdcdfef3bda" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>HD</ID>
+  <Name>HD</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="e7eec662-0e3e-4a9f-9b39-70f3eb5f7af1">
+      <ID>Program</ID>
+      <Name>Program</Name>
+      <DimensionID>Program</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="f39ca67f-e1ed-4fbb-bf64-bc24d8c69f13">
+          <AttributeID>Program ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="23083fd4-daf0-4f2c-82fe-7ca10f1a23bd">
+          <AttributeID>Date And Time ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8a5a0572-3e8e-4ec1-812a-4bac3879c0d3">
+          <AttributeID>Channel ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="75be2f64-d6d4-4749-a22a-9cd9eef7d178">
+          <AttributeID>Channel Cat ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1c014a8a-c902-48de-88f5-2bc8d3897571">
+          <AttributeID>Channel Gr ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="628f551a-9fe2-4804-a8c7-b51fee0d1f4c">
+          <AttributeID>Target Group ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ed020847-bfbc-4f50-81a2-0fa07c79dd8d">
+          <AttributeID>Title ID</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="258e6b55-f978-4d05-a78f-b74db91ff3fa">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="c6d89a14-b37a-44e4-89f0-11f18c57e720">
+          <HierarchyID>Hierarchy 1</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="8998d1d9-ffde-4792-97e9-0879267a8a15">
+          <HierarchyID>Hierarchy 2</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="cb5b95b5-3fbf-40ec-a082-0b15a1cfec5a">
+          <HierarchyID>Hierarchy 3</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="97acfac0-782f-4d43-ae90-662d82496ebd">
+          <HierarchyID>Hierarchy 4</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="106684a0-aeb6-46b4-8bfc-ff39ecf79705">
+      <ID>Date And Time</ID>
+      <Name>Date And Time</Name>
+      <DimensionID>Program</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="d78dd06c-b956-4b94-bc76-2957591b1a58">
+          <AttributeID>Program ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="9a49b900-4164-4662-b762-10410b88e511">
+          <AttributeID>Date And Time ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="83202e8b-1a57-4b5f-8892-d172db0cc02d">
+          <AttributeID>Channel ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e7b21929-4800-4615-977a-446186956fde">
+          <AttributeID>Channel Cat ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="0cf3091c-f733-491d-8b97-5be45d7f0b4e">
+          <AttributeID>Channel Gr ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a925f916-3a60-47d9-97bf-0ecfc27783d8">
+          <AttributeID>Target Group ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1a8f0d33-af85-4e25-b7d2-ee4f841a1cff">
+          <AttributeID>Title ID</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="438c0be9-a42b-4d55-8daa-629d5c50a17c">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="57db959c-3e98-448a-b93c-71e3bbe5e088">
+          <HierarchyID>Hierarchy 1</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="3014a87d-6be8-4024-8f13-964c75c653e0">
+          <HierarchyID>Hierarchy 2</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="8a55c875-5788-4d5c-b0a0-88d8bd5fd3e3">
+          <HierarchyID>Hierarchy 3</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="4de49a8e-229f-4b8f-b489-d6c61347e885">
+          <HierarchyID>Hierarchy 4</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="8e97ac7d-e9a6-428d-a27e-5ab2b570139d">
+      <ID>Channel</ID>
+      <Name>Channel</Name>
+      <DimensionID>Program</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="b1e3f51a-b9a1-4f54-8933-6415968c9c83">
+          <AttributeID>Program ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="fe10d04f-3d76-4510-9ff4-f5dc619f0b96">
+          <AttributeID>Date And Time ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e765754d-5cfd-46ac-990d-2a63c2178171">
+          <AttributeID>Channel ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2a81890f-a15d-4879-b637-3f2801b9a539">
+          <AttributeID>Channel Cat ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8288bcc1-2faf-4494-9e60-2e4525967560">
+          <AttributeID>Channel Gr ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5fcab535-eb26-4948-a548-4b90a33068a0">
+          <AttributeID>Target Group ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="59dcca4c-9c60-4846-8cbe-9a55aab85b14">
+          <AttributeID>Title ID</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="ff600737-745e-4def-8ed6-129afd8cd558">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="90ef3f91-bb83-4a0b-8deb-1932a0decc71">
+          <HierarchyID>Hierarchy 1</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="8e344904-354f-4132-97c7-553633336016">
+          <HierarchyID>Hierarchy 2</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="b0f592bf-f92b-449d-9de9-b91de4841e0a">
+          <HierarchyID>Hierarchy 3</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="50e07dbf-0b1a-4bcf-adf7-0ab486b6e403">
+          <HierarchyID>Hierarchy 4</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="be9e992d-833e-4749-b127-54eaad86d756">
+      <ID>Target Group</ID>
+      <Name>Target Group</Name>
+      <DimensionID>Program</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="b146ee33-afc1-4af9-8788-1fc2f703ee69">
+          <AttributeID>Program ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="7ac86c48-0dc3-452b-8c38-710791888d8e">
+          <AttributeID>Date And Time ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3c49f7c7-9bca-4fec-9e30-3ebcf83da8aa">
+          <AttributeID>Channel ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="0536a19b-e5be-48fa-8d18-a5723e3d1713">
+          <AttributeID>Channel Cat ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="97987e99-9585-40e0-a2e4-3c10535a74ec">
+          <AttributeID>Channel Gr ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2496d643-bf78-4418-ab3d-e03008c0cfbe">
+          <AttributeID>Target Group ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e52bc3b9-4c53-4665-804c-9660c6965b49">
+          <AttributeID>Title ID</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="0d9e8044-da5e-4ec3-a81d-1fc4c27731bd">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="f69ef852-9fc5-4416-810c-4f5cbee17873">
+          <HierarchyID>Hierarchy 1</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="1efb92e8-fd28-4f84-9f61-90bce5dea2a3">
+          <HierarchyID>Hierarchy 2</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="ae1d87ee-cea8-410c-9611-e0105d6e7b55">
+          <HierarchyID>Hierarchy 3</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="0ff60b34-6533-4bd5-830f-9f66778d346a">
+          <HierarchyID>Hierarchy 4</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="6775fff5-0a31-4996-ad2f-06418279904c">
+      <ID>Title</ID>
+      <Name>Title</Name>
+      <DimensionID>Program</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="c9653d68-584e-497c-8187-ecac76e1a2ef">
+          <AttributeID>Program ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1eefeb5e-8549-49cb-9a20-4f6beb800afe">
+          <AttributeID>Date And Time ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d3540bdf-b533-4551-a2ba-c49ee77cb6f0">
+          <AttributeID>Channel ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d0cddbb5-c5ea-498b-8aa1-65c4e98ffb51">
+          <AttributeID>Channel Cat ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2dd5266c-39c4-4245-a343-98e208749c78">
+          <AttributeID>Channel Gr ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="197645ac-6ade-4a21-b57f-f9045e216c38">
+          <AttributeID>Target Group ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="fbebff71-c08b-451e-b3bd-b80341265204">
+          <AttributeID>Title ID</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="38b7807b-dfe9-4566-a810-b7ceda71fd21">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="e46a9ad7-0085-44f4-b404-36ee44a9271b">
+          <HierarchyID>Hierarchy 1</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="07ead508-4845-4a6a-85e8-fef906e4b46b">
+          <HierarchyID>Hierarchy 2</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="d3fcee13-76d3-4508-800f-f0d478e0a894">
+          <HierarchyID>Hierarchy 3</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="bea9a02a-e71f-47c0-b728-b002b4d5a961">
+          <HierarchyID>Hierarchy 4</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="ae7576f7-352c-46bc-a3eb-772342b4b194">
+      <ID>Channel Cat</ID>
+      <Name>Channel Cat</Name>
+      <DimensionID>Program</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="da63d427-e5b9-448f-8adb-bb5f0417ccc1">
+          <AttributeID>Program ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a69dbad3-1d74-4603-96ac-bc785b03a9a7">
+          <AttributeID>Date And Time ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d89077d3-c3ac-42af-b449-f3ed38f86a79">
+          <AttributeID>Channel ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ef7cd6aa-f2ae-4985-897a-831d58213cbc">
+          <AttributeID>Channel Cat ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ee96ad2d-0d11-43e7-a6a8-77c62b85e1e8">
+          <AttributeID>Channel Gr ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b64cb225-b49a-4f98-9230-d75233874da0">
+          <AttributeID>Target Group ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2bd5f2e9-ff18-4b50-8d74-c6244322dddf">
+          <AttributeID>Title ID</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="681c27dc-1408-430a-8462-73caae66a944">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="0c9c0310-40ce-461f-8dde-751dbca5aab5">
+          <HierarchyID>Hierarchy 1</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="ce953012-351e-433e-aa3b-ce30b0ad0df9">
+          <HierarchyID>Hierarchy 2</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="06260c97-c593-4322-87a8-6c49c2aa6fc9">
+          <HierarchyID>Hierarchy 3</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="e4510cd0-cc54-4be7-b1bf-43cf43686373">
+          <HierarchyID>Hierarchy 4</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="edb7ed32-8d6a-460e-955f-9609b381228b">
+      <ID>Channel Gr</ID>
+      <Name>Channel Gr</Name>
+      <DimensionID>Program</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="a2043ad2-1260-42de-8460-ace7f0a0dfb1">
+          <AttributeID>Program ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b4eb2004-58a6-4512-bcf5-4bdb7e5383ad">
+          <AttributeID>Date And Time ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3fd645e7-25a2-4114-b51c-d9de30ff051d">
+          <AttributeID>Channel ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b39e3c3c-d1aa-4053-a867-c75056fcbeef">
+          <AttributeID>Channel Cat ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4b1a8b67-33e3-4661-a55c-c805866fa9e8">
+          <AttributeID>Channel Gr ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3b185507-e855-4959-9df0-8f002310e8ec">
+          <AttributeID>Target Group ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="255b582d-f5b7-4a3d-8fdb-8356f3e6aded">
+          <AttributeID>Title ID</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="9ad4b090-9ef1-4b37-934d-48a3978cb4e6">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="6292060a-d109-4903-a752-d9e8cf959ab5">
+          <HierarchyID>Hierarchy 1</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="ed3090e8-c3f1-4e15-a216-8d20fc93891d">
+          <HierarchyID>Hierarchy 2</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="0442771a-df3d-4928-a4d5-03a4ac5467e0">
+          <HierarchyID>Hierarchy 3</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="b0192ced-5977-46c8-beaf-8caa53695c42">
+          <HierarchyID>Hierarchy 4</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="92a0f8f2-9156-4be3-90d6-4ca55572c8c8">
+      <ID>Program</ID>
+      <Name>Program</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="1a7667cc-ffa1-444a-9657-59780b613d28">
+          <ID>AMR</ID>
+          <Name>AMR</Name>
+          <Source dwd:design-time-name="99de6d8a-35d7-4c35-8f47-d8d6bc5e1abc">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="10dcf07e-1435-4812-b106-41ab635ffd6c">
+              <TableID>dbo_Program</TableID>
+              <ColumnID>AMR</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="d0cca2d8-4b9f-4832-805c-09244e752cab">
+          <ID>AMR - Program</ID>
+          <Name>AMR - Program</Name>
+          <Source dwd:design-time-name="e8905146-8ddd-4751-8cf8-b6cf3c71e1e5">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="ced29bfd-1343-4664-abf8-cc1ae091481b">
+              <TableID>dbo_Program</TableID>
+              <ColumnID>AMR_x0025_</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="9e8e767c-a216-474d-8184-41f3e2bf6900">
+          <ID>SHR</ID>
+          <Name>SHR</Name>
+          <Source dwd:design-time-name="99e84c37-d8aa-4ee4-bf2b-b246788133db">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="744f0046-fa05-4792-ba12-ef2a971c034f">
+              <TableID>dbo_Program</TableID>
+              <ColumnID>SHR_x0025_</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="f5cf2dbf-1aa2-4fe7-bebc-ae7601a227a1">
+          <ID>RCH</ID>
+          <Name>RCH</Name>
+          <Source dwd:design-time-name="cd6c81a3-18ae-42c8-b7fe-b550ea9840c9">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="d35307fe-9769-4630-bef2-8ae0896b4e83">
+              <TableID>dbo_Program</TableID>
+              <ColumnID>RCH_x0025_</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="a70fcd95-d773-4c63-ae7d-cc6e5dec71d4">
+          <ID>RCH - Program</ID>
+          <Name>RCH - Program</Name>
+          <Source dwd:design-time-name="9663f76b-94a8-4ea8-8c9e-a1e2e6df18c4">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="fad19a7b-747e-4b11-9b09-f6943d63cf09">
+              <TableID>dbo_Program</TableID>
+              <ColumnID>RCH</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="92425b1a-a739-4d56-b769-0a69b393c6a3">
+          <ID>Program Count</ID>
+          <Name>Program Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="be7a0300-2cfb-4899-b26e-46e63792d90f">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="9992ca4b-4cf5-44ec-9eac-8ccfa52846fa">
+              <TableID>dbo_Program</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="68d9be33-c158-4fae-964f-a0bd0913e9dd">
+          <CubeDimensionID>Program</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="0518f0a7-7f88-49bf-9b59-c3c7555f2ac7">
+              <AttributeID>Program ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="d32371c1-e9df-4c56-aa09-80dc4c2cb19c">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="cf6aef32-e0c7-4076-85bf-e3228beae955">
+                    <TableID>dbo_Program</TableID>
+                    <ColumnID>ProgramID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="f584be22-e341-47a3-a412-f91ed5a3f48e">
+          <CubeDimensionID>Date And Time</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="d7102025-84f2-4ee2-bb05-e71b8a981361">
+              <AttributeID>Program ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="07917340-1a5e-4257-a894-344ce687a6d7">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="09e7ff53-ea67-41f7-b611-4ef1bdee1eaa">
+                    <TableID>dbo_Program</TableID>
+                    <ColumnID>ProgramID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="a38b4651-0379-4669-b4f8-f53d908e7903">
+          <CubeDimensionID>Channel</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="f169ab6a-d853-4c0c-9f0d-7a984a981a40">
+              <AttributeID>Program ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="93bf9b04-953c-4adc-bb90-8f3992435298">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="8b7e6551-4179-4b28-8000-0f04f5bb65f4">
+                    <TableID>dbo_Program</TableID>
+                    <ColumnID>ProgramID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="93460963-6cc8-4144-9807-3ce0c2ab5f9c">
+          <CubeDimensionID>Target Group</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="147b80a3-4df6-4e58-8861-214c039b9ca1">
+              <AttributeID>Program ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="9dadf1cc-8393-4966-bc59-7904ffc7ecef">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f801e635-e348-4ed6-9546-b86bd76c4195">
+                    <TableID>dbo_Program</TableID>
+                    <ColumnID>ProgramID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="7f6b525f-b21f-4fdf-bb20-e83de45e8ad8">
+          <CubeDimensionID>Title</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="752b9f88-d50a-49e4-9189-d0f6ce1a1d40">
+              <AttributeID>Program ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="71b1d184-bc1d-4cc7-8193-5169640c3133">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="1d4d3a9e-2d31-45de-8bf1-f374c094849b">
+                    <TableID>dbo_Program</TableID>
+                    <ColumnID>ProgramID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="8765e962-b9b2-4ad0-bbb7-bd071c3c2e0f">
+          <CubeDimensionID>Channel Cat</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="3faee37c-2228-4c35-8436-101700874c6c">
+              <AttributeID>Program ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="d473e690-5592-4899-bcc9-7b3587666ec0">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="faccad28-e8ee-4280-9af5-4719116a8558">
+                    <TableID>dbo_Program</TableID>
+                    <ColumnID>ProgramID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="0ed15784-dada-4e9f-b602-bbca126dabeb">
+          <CubeDimensionID>Channel Gr</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="661cdf0b-2b80-429d-b6f3-3f0fc201bde3">
+              <AttributeID>Program ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="d9846526-725d-464c-9dcc-535910972142">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="9b05fa01-d4c2-4914-a3f9-26496f8ea70f">
+                    <TableID>dbo_Program</TableID>
+                    <ColumnID>ProgramID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="1c2de732-1869-4e69-b2f0-638cdf04faa2">
+      <ID>Channel</ID>
+      <Name>Channel</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="1ee1f73a-da93-4f7f-ab90-dd1df204e18b">
+          <ID>Channel Count</ID>
+          <Name>Channel Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="5eb4c1c8-0889-473d-9c11-1d7ea9315aab">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="e8cb7985-0318-4a41-a5ae-e055ae1bb401">
+              <TableID>dbo_Channel</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="a4bd4fcf-3e2f-4310-9929-e18f0558bc3d">
+          <CubeDimensionID>Channel Cat</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="b27fe927-21f7-4c83-bda0-05b7c4a0a9cc">
+              <AttributeID>Channel Cat ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="531ed0f2-12db-4590-8a38-3b3646e58030">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="366f2881-c776-411b-b559-cf6bc2caed37">
+                    <TableID>dbo_Channel</TableID>
+                    <ColumnID>ChannelCatID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="aecfb1c7-456b-482f-b37a-b47fcef3da5b">
+          <CubeDimensionID>Channel Gr</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="cc60087f-cc6d-4da1-bd1d-78383b813ca0">
+              <AttributeID>Channel Gr ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="a9fd88a0-7cce-4c8b-b547-0b6c96da9011">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="b1b71a0a-10bb-4ef1-88d9-a1c406c67e5d">
+                    <TableID>dbo_Channel</TableID>
+                    <ColumnID>ChannelGrID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="c7a9a591-42ac-4165-8d59-1fbc823fe9c0">
+    <DataSourceViewID>HD</DataSourceViewID>
+  </Source>
+</Cube>
