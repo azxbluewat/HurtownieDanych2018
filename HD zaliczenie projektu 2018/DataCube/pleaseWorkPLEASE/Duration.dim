@@ -1,0 +1,313 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="ec4d648c-9126-4737-b432-dc2bebf02d2a" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Duration</ID>
+  <Name>Duration</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="4" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-4486" scrolltop="-3059" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="12012" y="14393" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01ee0000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Time" left="20" top="4279" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="3995" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000c0000b80b00009b0f0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Time" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Duration" left="20" top="0" logicalid="2" controlid="2" masterid="0" hint1="0" hint2="0" width="3000" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000c0000b80b000057070000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Duration" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="1121" top="1579" logicalid="3" controlid="3" masterid="0" hint1="0" hint2="0" width="799" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_172]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="2" sourceattachpoint="4" destattachpoint="5" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="1520" y="4279" />
+              <point x="1520" y="1879" />
+            </connector>
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-4486</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-3059</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="761691ae-4850-449d-af81-7fcb5ca475df">
+    <DataSourceViewID>HD</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="c13d3c10-dfda-435a-a2cd-233a7dd57592">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="4120dcb1-8b92-4372-9835-d02803fe2f58">
+      <ID>Duration ID</ID>
+      <Name>Duration ID</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="04251b9e-f1f6-4f87-a75d-b3be19d0c623">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6b5b80bc-5e03-4f91-8ed2-aeacc04c513a">
+            <TableID>dbo_Duration</TableID>
+            <ColumnID>DurationID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="12434ed9-3458-4524-96d1-f3fce4592206">
+          <AttributeID>Time ID</AttributeID>
+          <Name>Time ID</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="c95f82c0-1e3c-480e-96be-e0f28d01c580">
+      <ID>Time ID</ID>
+      <Name>Time ID</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c031df51-44da-4e5e-9ee1-8c9c4147b1ac">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="17ba86d0-1b19-4dc3-a697-d95d33485fd8">
+            <TableID>dbo_Time</TableID>
+            <ColumnID>TimeID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="4ccaf8f1-8ff6-4fb8-99f6-18ec72a3a144">
+          <AttributeID>Hours</AttributeID>
+          <Name>Hours</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="8e295fd3-aa2d-4259-88a3-0ff0617fe6d5">
+          <AttributeID>Minutes</AttributeID>
+          <Name>Minutes</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="059e1839-26b4-4f3d-9d9e-9584953ca3f8">
+          <AttributeID>Seconds</AttributeID>
+          <Name>Seconds</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="8be9bc69-6f25-4e49-b052-3c2089400df7">
+          <AttributeID>Minutes All</AttributeID>
+          <Name>Minutes All</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="b156a6e1-6eb3-49c3-91ce-a7d8a9201f25">
+          <AttributeID>Media Hours</AttributeID>
+          <Name>Media Hours</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="fee2f888-50f0-476b-b960-1073d3759c43">
+      <ID>Hours</ID>
+      <Name>Hours</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c8cf755a-8bf7-45e4-84ae-572bd9338ecc">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="94430060-5c71-4daa-b713-393e5d2efafe">
+            <TableID>dbo_Time</TableID>
+            <ColumnID>Hours</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="1f5dfee9-8de9-4a52-96a3-fe8b78f68c26">
+      <ID>Minutes</ID>
+      <Name>Minutes</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0757380a-6157-49a8-b555-16b29ae840bc">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7f4db3c6-740f-488d-bf22-a52b11e17c14">
+            <TableID>dbo_Time</TableID>
+            <ColumnID>Minutes</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="98261ebf-8cac-48cc-bd22-613d04d572d6">
+      <ID>Seconds</ID>
+      <Name>Seconds</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="947ee040-a16a-4aec-888a-d23068e9f321">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2ff204cd-450d-4007-a957-a934c19eef9b">
+            <TableID>dbo_Time</TableID>
+            <ColumnID>Seconds</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="5d221909-1a9b-457e-8e13-4eac80efee93">
+      <ID>Minutes All</ID>
+      <Name>Minutes All</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="19b564f6-80a4-4c05-b058-2ead94110572">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="703c8c44-53bb-4ff7-865d-a59876338fa1">
+            <TableID>dbo_Time</TableID>
+            <ColumnID>MinutesAll</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="f69dde7e-4d5b-4481-818e-da05e477cefc">
+      <ID>Media Hours</ID>
+      <Name>Media Hours</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2ddba6f2-3333-410a-ac30-0464e72287b1">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="06b99d5c-9e71-4e67-9734-b935e440adc8">
+            <TableID>dbo_Time</TableID>
+            <ColumnID>MediaHours</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="31d09cf1-8ad7-4358-9f96-3781fc0efdea">
+      <ID>Hierarchy</ID>
+      <Name>D H</Name>
+      <Levels>
+        <Level dwd:design-time-name="5c283e0b-d969-427b-bc32-c18dc22d53bc">
+          <ID>Time ID</ID>
+          <Name>Time ID</Name>
+          <SourceAttributeID>Time ID</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="46336295-d373-4857-a637-62726bd3737c">
+          <ID>Duration ID</ID>
+          <Name>Duration ID</Name>
+          <SourceAttributeID>Duration ID</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="643a5fa0-4f5b-4b32-9e0a-b85f2e19fca7">
+      <ID>Hierarchy 1</ID>
+      <Name>D H MT</Name>
+      <Levels>
+        <Level dwd:design-time-name="a8ca8730-5453-469e-b05b-3b4d6041a63b">
+          <ID>Media Hours</ID>
+          <Name>Media Hours</Name>
+          <SourceAttributeID>Media Hours</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="8901f325-6b2d-4525-a1aa-3d5f5552d4f7">
+          <ID>Minutes</ID>
+          <Name>Minutes</Name>
+          <SourceAttributeID>Minutes</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="cba85648-c81f-43bc-afe0-77ff8f44c9f9">
+          <ID>Seconds</ID>
+          <Name>Seconds</Name>
+          <SourceAttributeID>Seconds</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="27cb3ceb-087e-4f64-b223-241b05ed6cac">
+      <ID>Hierarchy 2</ID>
+      <Name>D H T</Name>
+      <Levels>
+        <Level dwd:design-time-name="78b884f1-5103-44c5-a3e9-3b20cc02d065">
+          <ID>Hours</ID>
+          <Name>Hours</Name>
+          <SourceAttributeID>Hours</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="ff32d4b9-5604-4cc8-a19c-c18729b18685">
+          <ID>Minutes</ID>
+          <Name>Minutes</Name>
+          <SourceAttributeID>Minutes</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="f1e45f32-18f1-46aa-8473-66e9ac658fbf">
+          <ID>Seconds</ID>
+          <Name>Seconds</Name>
+          <SourceAttributeID>Seconds</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

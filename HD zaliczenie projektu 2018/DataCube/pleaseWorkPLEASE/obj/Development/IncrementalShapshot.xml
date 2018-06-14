@@ -1,0 +1,131 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>pleaseWorkPLEASE</Database>
+    <Server>localhost</Server>
+    <ConnectionString>Data Source=localhost;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>Default</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>mQr4/smJwHCaYmV32QHreJXfPFc=14.06.2018 18:29:2514.06.2018 18:29:25</TimeStamp>
+        <ID>
+          <String>HD</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>ZES3MU+xzD9JqTa6WYEFu1eLG/M=14.06.2018 18:29:4614.06.2018 18:29:46</TimeStamp>
+        <ID>
+          <String>HD</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>+jMkWUL9tRCE4twMPFeQYsT1Ob0=14.06.2018 18:36:0214.06.2018 18:30:03</TimeStamp>
+        <ID>
+          <String>Channel</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>7FeArifStrWT8PudVo/thBo9XBY=14.06.2018 18:30:1314.06.2018 18:30:13</TimeStamp>
+        <ID>
+          <String>Channel Category</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>ZE7cGVHxibkj4jA3eXdN/PPJcRM=14.06.2018 18:30:2114.06.2018 18:30:21</TimeStamp>
+        <ID>
+          <String>Channel Group</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>EqjAGHH7tOIsaUySkCx3GgNC3dk=14.06.2018 18:36:0214.06.2018 18:30:33</TimeStamp>
+        <ID>
+          <String>Date</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>RN6chQhY+fd0Kivrj7AKIVsN92Y=14.06.2018 18:36:0214.06.2018 18:30:46</TimeStamp>
+        <ID>
+          <String>Duration</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>hd406XMH6M0Jji1oWh63P90aXgc=14.06.2018 18:36:0214.06.2018 18:31:06</TimeStamp>
+        <ID>
+          <String>Media Date</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>WS0Z5WFbufY1CI5AFeoO1o0N6uE=14.06.2018 18:31:3214.06.2018 18:31:32</TimeStamp>
+        <ID>
+          <String>Program</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>ow0R/RXcGBJFBix1YX7WMIKTmug=14.06.2018 18:41:0514.06.2018 18:31:45</TimeStamp>
+        <ID>
+          <String>Start Time</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>sCKBwfRsbQQ33lIUXiIO00tcXfY=14.06.2018 18:31:5514.06.2018 18:31:55</TimeStamp>
+        <ID>
+          <String>Target Group</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>ipUHMqdufyuM2BrL4tughRzwSIA=14.06.2018 18:36:0214.06.2018 18:32:07</TimeStamp>
+        <ID>
+          <String>Title</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>q4nGy34wvtuE1TBAh838o0RuyOY=14.06.2018 18:57:4514.06.2018 18:57:45</TimeStamp>
+        <ID>
+          <String>Time</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>e3s4YFrnY2c5C3uxMKO0DhV5foU=14.06.2018 18:57:5514.06.2018 18:36:163yEL7Nveb6d8C6xAICJg9zYzlmI=14.06.2018 18:36:1614.06.2018 18:36:16</TimeStamp>
+        <ID>
+          <String>HD</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>FVJOMN4eGYVhwcE8IvEBrIFkq+U=14.06.2018 18:29:1014.06.2018 18:29:10</TimeStamp>
+      <ID>
+        <String>pleaseWorkPLEASE</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2018-06-14T16:58:09.693333Z</LastDeployed>
+</DeploymentSnapshot>

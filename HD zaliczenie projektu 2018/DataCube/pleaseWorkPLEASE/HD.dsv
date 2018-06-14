@@ -1,0 +1,332 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="4642a84c-c589-496c-930f-f33a7134b656" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>HD</ID>
+  <Name>HD</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>HD</DataSourceID>
+  <Schema>
+    <xs:schema id="HD" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="HD" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="6cdba7b1-dc01-438c-9f7d-ac6b6a5900ff">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_Channel" msprop:design-time-name="c823d1b6-0ee9-4ee8-9e02-a351e6dc30cc" msprop:DbTableName="Channel" msprop:FriendlyName="Channel" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ChannelID" msprop:design-time-name="6f3f57ef-a58b-4e36-b446-54d2a2829a22" msprop:DbColumnName="ChannelID" msprop:FriendlyName="ChannelID" type="xs:int" />
+                  <xs:element name="ChannelName" msprop:design-time-name="d1809b3e-1f93-4923-b23b-53462aafdbb6" msprop:DbColumnName="ChannelName" msprop:FriendlyName="ChannelName">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="ChannelCatID" msprop:design-time-name="4bbf9be0-a79a-4ab9-b032-11973da55141" msprop:DbColumnName="ChannelCatID" msprop:FriendlyName="ChannelCatID" type="xs:int" />
+                  <xs:element name="ChannelGrID" msprop:design-time-name="d9ef0a4d-ec2d-4e11-8027-2e0889a8a1a4" msprop:DbColumnName="ChannelGrID" msprop:FriendlyName="ChannelGrID" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_ChannelCategory" msprop:design-time-name="244f6f3d-c56d-4b76-8eec-86c7f9c2d5b9" msprop:DbTableName="ChannelCategory" msprop:FriendlyName="ChannelCategory" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ChannelCatID" msprop:design-time-name="1ee95d7a-d87c-469a-b9c5-935d7c621df8" msprop:DbColumnName="ChannelCatID" msprop:FriendlyName="ChannelCatID" type="xs:int" />
+                  <xs:element name="ChannelCatName" msprop:design-time-name="dc985e47-9883-49c2-b0b2-ffd2a88b8ada" msprop:DbColumnName="ChannelCatName" msprop:FriendlyName="ChannelCatName">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_ChannelGroup" msprop:design-time-name="c25ccf72-2de7-43c4-a562-41e19a5e2baa" msprop:DbTableName="ChannelGroup" msprop:FriendlyName="ChannelGroup" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ChannelGrID" msprop:design-time-name="097b9076-702a-41fb-a86e-2adbfde7f981" msprop:DbColumnName="ChannelGrID" msprop:FriendlyName="ChannelGrID" type="xs:int" />
+                  <xs:element name="ChannelGrName" msprop:design-time-name="ff6d21e9-4f45-4bce-b061-a749f4a25820" msprop:DbColumnName="ChannelGrName" msprop:FriendlyName="ChannelGrName">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Date" msprop:design-time-name="685dc3c9-7195-46e7-be02-878ee485be5e" msprop:DbTableName="Date" msprop:FriendlyName="Date" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="DateID" msprop:design-time-name="f3c0bd1a-9cff-4405-812a-365446d9fcd1" msprop:DbColumnName="DateID" msprop:FriendlyName="DateID" type="xs:int" />
+                  <xs:element name="Date" msprop:design-time-name="2fef85a5-56bb-4dd3-8245-29f0b7e27078" msprop:DbColumnName="Date" msprop:FriendlyName="Date" type="xs:dateTime" />
+                  <xs:element name="Day" msprop:design-time-name="94581160-1824-4571-a3e2-441ec00fa1a9" msprop:DbColumnName="Day" msprop:FriendlyName="Day" type="xs:int" />
+                  <xs:element name="DayWeek" msprop:design-time-name="4a41ba47-e6b2-4dee-a3c3-16d1a88cc97f" msprop:DbColumnName="DayWeek" msprop:FriendlyName="DayWeek" type="xs:int" />
+                  <xs:element name="DayWeekName" msprop:design-time-name="4bc8ba5b-854e-41e4-9554-2d90c4c46f5f" msprop:DbColumnName="DayWeekName" msprop:FriendlyName="DayWeekName">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Week" msprop:design-time-name="66a5a3e4-bbc4-40e8-893a-e3d1dcfceec3" msprop:DbColumnName="Week" msprop:FriendlyName="Week" type="xs:int" />
+                  <xs:element name="Month" msprop:design-time-name="9115330f-2676-426c-a0c3-dfb8f3c4da62" msprop:DbColumnName="Month" msprop:FriendlyName="Month" type="xs:int" />
+                  <xs:element name="MonthName" msprop:design-time-name="e295b63e-8c6d-4ded-a085-108913ae0335" msprop:DbColumnName="MonthName" msprop:FriendlyName="MonthName">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="DayYear" msprop:design-time-name="9e98abdf-eb1e-4184-9124-389818f23a86" msprop:DbColumnName="DayYear" msprop:FriendlyName="DayYear" type="xs:int" />
+                  <xs:element name="Year" msprop:design-time-name="7aa17f7f-cd89-41b4-ba0b-a1b3bd4972bb" msprop:DbColumnName="Year" msprop:FriendlyName="Year" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Duration" msprop:design-time-name="79e1318d-c04e-4cb1-b2f6-341e3d7ee1d0" msprop:DbTableName="Duration" msprop:FriendlyName="Duration" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="DurationID" msprop:design-time-name="986c3f0d-ffb9-4dbd-b43d-c47702e14642" msprop:DbColumnName="DurationID" msprop:FriendlyName="DurationID" type="xs:int" />
+                  <xs:element name="TimeID" msprop:design-time-name="dd049d93-5379-414d-9599-ab636285735d" msprop:DbColumnName="TimeID" msprop:FriendlyName="TimeID" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_MediaDate" msprop:design-time-name="eea7fba4-6a23-4b0d-8f9e-bbeeb6df9da7" msprop:DbTableName="MediaDate" msprop:FriendlyName="MediaDate" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="MediaDateID" msprop:design-time-name="32a7adab-2b3d-4359-a244-836be7cfa362" msprop:DbColumnName="MediaDateID" msprop:FriendlyName="MediaDateID" type="xs:int" />
+                  <xs:element name="Date" msprop:design-time-name="c365aa8a-aafd-48c3-875c-e985104db49e" msprop:DbColumnName="Date" msprop:FriendlyName="Date" type="xs:dateTime" />
+                  <xs:element name="Day" msprop:design-time-name="3bacd52e-0ed4-4d16-97c8-1c19e68496ff" msprop:DbColumnName="Day" msprop:FriendlyName="Day" type="xs:int" />
+                  <xs:element name="DayWeek" msprop:design-time-name="4ae5176c-6ffe-4743-a7b2-a0c3c35ec153" msprop:DbColumnName="DayWeek" msprop:FriendlyName="DayWeek" type="xs:int" />
+                  <xs:element name="DayWeekName" msprop:design-time-name="61ded3f7-cf17-4eed-a22a-081eec8b673d" msprop:DbColumnName="DayWeekName" msprop:FriendlyName="DayWeekName">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Week" msprop:design-time-name="a4f22285-3b7b-4c18-aea7-a88ba5a6ac4d" msprop:DbColumnName="Week" msprop:FriendlyName="Week" type="xs:int" />
+                  <xs:element name="Month" msprop:design-time-name="af463e6d-0640-46d0-8e75-72e42519f6aa" msprop:DbColumnName="Month" msprop:FriendlyName="Month" type="xs:int" />
+                  <xs:element name="MonthName" msprop:design-time-name="8d98cc2b-0089-4b8f-b23a-bc4be6cb8d7f" msprop:DbColumnName="MonthName" msprop:FriendlyName="MonthName">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="DayYear" msprop:design-time-name="df3bd514-4f96-426d-b79c-fc7a64d00976" msprop:DbColumnName="DayYear" msprop:FriendlyName="DayYear" type="xs:int" />
+                  <xs:element name="Year" msprop:design-time-name="eb0a8107-b719-424e-84e2-e9ab5a463fbe" msprop:DbColumnName="Year" msprop:FriendlyName="Year" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Program" msprop:design-time-name="41c1f2b2-d1bb-4204-9a00-6d8960655cca" msprop:DbTableName="Program" msprop:FriendlyName="Program" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ProgramID" msprop:design-time-name="77d72904-e639-4b6e-9da0-eff3f9a3534f" msprop:DbColumnName="ProgramID" msprop:FriendlyName="ProgramID" type="xs:int" />
+                  <xs:element name="StartTimeID" msprop:design-time-name="038c01da-2dd2-4100-83b5-cfcb8e4dfe18" msprop:DbColumnName="StartTimeID" msprop:FriendlyName="StartTimeID" type="xs:int" />
+                  <xs:element name="ChannelID" msprop:design-time-name="f28d058f-2eb7-41e6-9731-5a707410d547" msprop:DbColumnName="ChannelID" msprop:FriendlyName="ChannelID" type="xs:int" />
+                  <xs:element name="TargetGroupID" msprop:design-time-name="33fcf84b-5f3b-4cfb-a6f7-60586da6ff3b" msprop:DbColumnName="TargetGroupID" msprop:FriendlyName="TargetGroupID" type="xs:int" />
+                  <xs:element name="DateID" msprop:design-time-name="b98ae6f4-b9dc-43be-ab36-95073d1ca576" msprop:DbColumnName="DateID" msprop:FriendlyName="DateID" type="xs:int" />
+                  <xs:element name="TitleID" msprop:design-time-name="2a3b4399-3aa0-48f6-9c6d-a4d0f7d7a5e8" msprop:DbColumnName="TitleID" msprop:FriendlyName="TitleID" type="xs:int" />
+                  <xs:element name="AMR" msprop:design-time-name="52430d52-c042-4351-bff6-6fbfdd8db456" msprop:DbColumnName="AMR" msprop:FriendlyName="AMR" type="xs:int" minOccurs="0" />
+                  <xs:element name="AMR_x0025_" msprop:design-time-name="0127f70e-2d22-4090-9d0f-dca5b0ffad90" msprop:DbColumnName="AMR%" msprop:FriendlyName="AMR%" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="SHR_x0025_" msprop:design-time-name="e2135515-509d-443d-8b79-d993e5a24d2f" msprop:DbColumnName="SHR%" msprop:FriendlyName="SHR%" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="RCH_x0025_" msprop:design-time-name="eeda47ca-b838-41b1-b57f-5b4b733b5bd6" msprop:DbColumnName="RCH%" msprop:FriendlyName="RCH%" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="RCH" msprop:design-time-name="e41d2718-db27-4e7a-8e2c-61558021e4b1" msprop:DbColumnName="RCH" msprop:FriendlyName="RCH" type="xs:int" minOccurs="0" />
+                  <xs:element name="MediaDateID" msprop:design-time-name="de334265-c1c3-4ce5-a1dd-6adc6203fde9" msprop:DbColumnName="MediaDateID" msprop:FriendlyName="MediaDateID" type="xs:int" />
+                  <xs:element name="DurationID" msprop:design-time-name="6c0198cc-4a03-4823-9523-ae2a7d4c3836" msprop:DbColumnName="DurationID" msprop:FriendlyName="DurationID" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_StartTime" msprop:design-time-name="cd14929f-9321-4f81-af51-8e71da517701" msprop:DbTableName="StartTime" msprop:FriendlyName="StartTime" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="StartTimeID" msprop:design-time-name="6e47f586-024c-4740-b033-cc3f8a4bdcaf" msprop:DbColumnName="StartTimeID" msprop:FriendlyName="StartTimeID" type="xs:int" />
+                  <xs:element name="TimeID" msprop:design-time-name="beb36ea1-cd36-4014-b65e-80475b352164" msprop:DbColumnName="TimeID" msprop:FriendlyName="TimeID" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_TargetGroup" msprop:design-time-name="7b699ae9-3cfc-4122-8fa8-5be2ed93980a" msprop:DbTableName="TargetGroup" msprop:FriendlyName="TargetGroup" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="TargetGroupID" msprop:design-time-name="4db92a89-25f7-4cfd-bd8c-4886866ce0a6" msprop:DbColumnName="TargetGroupID" msprop:FriendlyName="TargetGroupID" type="xs:int" />
+                  <xs:element name="TargetGroupName" msprop:design-time-name="63c3d0d0-fcd9-46bd-901e-1ede60685d72" msprop:DbColumnName="TargetGroupName" msprop:FriendlyName="TargetGroupName">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="TargetGropKod" msprop:design-time-name="3c2e53e6-949b-4cb8-92da-db97858b7aca" msprop:DbColumnName="TargetGropKod" msprop:FriendlyName="TargetGropKod">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Time" msprop:design-time-name="8640e984-992c-45a3-b4ee-d69a300b1afd" msprop:DbTableName="Time" msprop:FriendlyName="Time" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="TimeID" msprop:design-time-name="3a3dbd20-36db-423e-9b91-89f7be8e308f" msprop:DbColumnName="TimeID" msprop:FriendlyName="TimeID" type="xs:int" />
+                  <xs:element name="Time" msdata:DataType="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:design-time-name="b57a6316-cebb-4bd7-8206-0c05efaf444a" msprop:DbColumnName="Time" msprop:FriendlyName="Time" type="xs:anyType" />
+                  <xs:element name="Hours" msprop:design-time-name="11e91a85-a1d1-430f-91a3-ad3ace8cf440" msprop:DbColumnName="Hours" msprop:FriendlyName="Hours" type="xs:int" />
+                  <xs:element name="Minutes" msprop:design-time-name="de8c3eef-6852-4674-9c2e-4483e8358ed7" msprop:DbColumnName="Minutes" msprop:FriendlyName="Minutes" type="xs:int" />
+                  <xs:element name="Seconds" msprop:design-time-name="6cd562cf-69fe-4651-be4d-10c3f9488ce6" msprop:DbColumnName="Seconds" msprop:FriendlyName="Seconds" type="xs:int" />
+                  <xs:element name="MinutesAll" msprop:design-time-name="fa389923-0904-4eff-bb8b-92f65295ecef" msprop:DbColumnName="MinutesAll" msprop:FriendlyName="MinutesAll" type="xs:int" />
+                  <xs:element name="MediaHours" msprop:design-time-name="4e179f3f-5c60-4ce2-9f3a-6f308b71743c" msprop:DbColumnName="MediaHours" msprop:FriendlyName="MediaHours" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Title" msprop:design-time-name="511732c9-807a-4938-8018-44b5070d79d0" msprop:DbTableName="Title" msprop:FriendlyName="Title" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="TitleID" msprop:design-time-name="030af903-0f39-4a60-8e28-f2bf542aa642" msprop:DbColumnName="TitleID" msprop:FriendlyName="TitleID" type="xs:int" />
+                  <xs:element name="Description" msprop:design-time-name="dc6113b5-ccaf-486f-9880-3aff632ad088" msprop:DbColumnName="Description" msprop:FriendlyName="Description">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="150" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="_x0032_nDescription" msprop:design-time-name="d9d8185f-78a8-442a-9824-92eb72112cfa" msprop:DbColumnName="2nDescription" msprop:FriendlyName="2nDescription" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="150" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Channel" />
+          <xs:field xpath="ChannelID" />
+        </xs:unique>
+        <xs:unique name="dbo_ChannelCategory_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_ChannelCategory" />
+          <xs:field xpath="ChannelCatID" />
+        </xs:unique>
+        <xs:unique name="dbo_ChannelGroup_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_ChannelGroup" />
+          <xs:field xpath="ChannelGrID" />
+        </xs:unique>
+        <xs:unique name="dbo_Date_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Date" />
+          <xs:field xpath="DateID" />
+        </xs:unique>
+        <xs:unique name="dbo_Duration_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Duration" />
+          <xs:field xpath="DurationID" />
+        </xs:unique>
+        <xs:unique name="dbo_MediaDate_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_MediaDate" />
+          <xs:field xpath="MediaDateID" />
+        </xs:unique>
+        <xs:unique name="dbo_Program_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Program" />
+          <xs:field xpath="ProgramID" />
+        </xs:unique>
+        <xs:unique name="dbo_StartTime_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_StartTime" />
+          <xs:field xpath="StartTimeID" />
+        </xs:unique>
+        <xs:unique name="dbo_TargetGroup_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_TargetGroup" />
+          <xs:field xpath="TargetGroupID" />
+        </xs:unique>
+        <xs:unique name="dbo_Time_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Time" />
+          <xs:field xpath="TimeID" />
+        </xs:unique>
+        <xs:unique name="dbo_Title_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Title" />
+          <xs:field xpath="TitleID" />
+        </xs:unique>
+        <xs:keyref name="FK_168" refer="dbo_Time_Constraint1">
+          <xs:selector xpath=".//dbo_StartTime" />
+          <xs:field xpath="TimeID" />
+        </xs:keyref>
+        <xs:keyref name="FK_54" refer="Constraint1">
+          <xs:selector xpath=".//dbo_Program" />
+          <xs:field xpath="ChannelID" />
+        </xs:keyref>
+        <xs:keyref name="FK_78" refer="dbo_Title_Constraint1">
+          <xs:selector xpath=".//dbo_Program" />
+          <xs:field xpath="TitleID" />
+        </xs:keyref>
+        <xs:keyref name="FK_66" refer="dbo_Date_Constraint1">
+          <xs:selector xpath=".//dbo_Program" />
+          <xs:field xpath="DateID" />
+        </xs:keyref>
+        <xs:keyref name="FK_180" refer="dbo_Duration_Constraint1">
+          <xs:selector xpath=".//dbo_Program" />
+          <xs:field xpath="DurationID" />
+        </xs:keyref>
+        <xs:keyref name="FK_62" refer="dbo_TargetGroup_Constraint1">
+          <xs:selector xpath=".//dbo_Program" />
+          <xs:field xpath="TargetGroupID" />
+        </xs:keyref>
+        <xs:keyref name="FK_176" refer="dbo_StartTime_Constraint1">
+          <xs:selector xpath=".//dbo_Program" />
+          <xs:field xpath="StartTimeID" />
+        </xs:keyref>
+        <xs:keyref name="FK_146" refer="dbo_MediaDate_Constraint1">
+          <xs:selector xpath=".//dbo_Program" />
+          <xs:field xpath="MediaDateID" />
+        </xs:keyref>
+        <xs:keyref name="FK_172" refer="dbo_Time_Constraint1">
+          <xs:selector xpath=".//dbo_Duration" />
+          <xs:field xpath="TimeID" />
+        </xs:keyref>
+        <xs:keyref name="FK_107" refer="dbo_ChannelGroup_Constraint1">
+          <xs:selector xpath=".//dbo_Channel" />
+          <xs:field xpath="ChannelGrID" />
+        </xs:keyref>
+        <xs:keyref name="FK_98" refer="dbo_ChannelCategory_Constraint1">
+          <xs:selector xpath=".//dbo_Channel" />
+          <xs:field xpath="ChannelCatID" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <HD xmlns="" />
+  </Schema>
+</DataSourceView>
