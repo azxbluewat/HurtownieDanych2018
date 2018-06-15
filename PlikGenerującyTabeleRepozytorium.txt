@@ -1,0 +1,207 @@
+
+--************************************** [Time]
+
+CREATE TABLE [Time]
+(
+ [TimeID]     INT NOT NULL ,
+ [Time]       TIME(7) NOT NULL ,
+ [Hours]      INT NOT NULL ,
+ [Minutes]    INT NOT NULL ,
+ [Seconds]    INT NOT NULL ,
+ [MinutesAll] INT NOT NULL ,
+ [MediaHours] INT NOT NULL ,
+
+ CONSTRAINT [PK_Time] PRIMARY KEY CLUSTERED ([TimeID] ASC)
+);
+GO
+
+
+
+--************************************** [MediaDate]
+
+CREATE TABLE [MediaDate]
+(
+ [MediaDateID] INT NOT NULL ,
+ [Date]        DATE NOT NULL ,
+ [Day]         INT NOT NULL ,
+ [DayWeek]     INT NOT NULL ,
+ [DayWeekName] VARCHAR(50) NOT NULL ,
+ [Week]        INT NOT NULL ,
+ [Month]       INT NOT NULL ,
+ [MonthName]   VARCHAR(50) NOT NULL ,
+ [DayYear]     INT NOT NULL ,
+ [Year]        INT NOT NULL ,
+
+ CONSTRAINT [PK_MediaDate] PRIMARY KEY CLUSTERED ([MediaDateID] ASC)
+);
+GO
+
+
+
+--************************************** [ChannelGroup]
+
+CREATE TABLE [ChannelGroup]
+(
+ [ChannelGrID]   INT NOT NULL ,
+ [ChannelGrName] VARCHAR(50) NOT NULL ,
+
+ CONSTRAINT [PK_ChannelGroup] PRIMARY KEY CLUSTERED ([ChannelGrID] ASC)
+);
+GO
+
+
+
+--************************************** [ChannelCategory]
+
+CREATE TABLE [ChannelCategory]
+(
+ [ChannelCatID]   INT NOT NULL ,
+ [ChannelCatName] VARCHAR(50) NOT NULL ,
+
+ CONSTRAINT [PK_ChannelCategory] PRIMARY KEY CLUSTERED ([ChannelCatID] ASC)
+);
+GO
+
+
+
+--************************************** [TargetGroup]
+
+CREATE TABLE [TargetGroup]
+(
+ [TargetGroupID]   INT NOT NULL ,
+ [TargetGroupName] VARCHAR(50) NOT NULL ,
+ [TargetGropKod]   VARCHAR(50) NOT NULL ,
+
+ CONSTRAINT [PK_VariableTarget] PRIMARY KEY CLUSTERED ([TargetGroupID] ASC)
+);
+GO
+
+
+
+--************************************** [Title]
+
+CREATE TABLE [Title]
+(
+ [TitleID]       INT NOT NULL ,
+ [Description]   VARCHAR(150) NOT NULL ,
+ [2nDescription] VARCHAR(150) NULL ,
+
+ CONSTRAINT [PK_Title] PRIMARY KEY CLUSTERED ([TitleID] ASC)
+);
+GO
+
+
+
+--************************************** [Date]
+
+CREATE TABLE [Date]
+(
+ [DateID]      INT NOT NULL ,
+ [Date]        DATE NOT NULL ,
+ [Day]         INT NOT NULL ,
+ [DayWeek]     INT NOT NULL ,
+ [DayWeekName] VARCHAR(50) NOT NULL ,
+ [Week]        INT NOT NULL ,
+ [Month]       INT NOT NULL ,
+ [MonthName]   VARCHAR(50) NOT NULL ,
+ [DayYear]     INT NOT NULL ,
+ [Year]        INT NOT NULL ,
+
+ CONSTRAINT [PK_DateAndTime] PRIMARY KEY CLUSTERED ([DateID] ASC)
+);
+GO
+
+
+
+--************************************** [Duration]
+
+CREATE TABLE [Duration]
+(
+ [DurationID] INT NOT NULL ,
+ [TimeID]     INT NOT NULL ,
+
+ CONSTRAINT [PK_Duration] PRIMARY KEY CLUSTERED ([DurationID] ASC),
+ CONSTRAINT [FK_172] FOREIGN KEY ([TimeID])
+  REFERENCES [Time]([TimeID])
+);
+GO
+
+
+--SKIP Index: [fkIdx_172]
+
+
+--************************************** [StartTime]
+
+CREATE TABLE [StartTime]
+(
+ [StartTimeID] INT NOT NULL ,
+ [TimeID]      INT NOT NULL ,
+
+ CONSTRAINT [PK_StartTime] PRIMARY KEY CLUSTERED ([StartTimeID] ASC),
+ CONSTRAINT [FK_168] FOREIGN KEY ([TimeID])
+  REFERENCES [Time]([TimeID])
+);
+GO
+
+
+--SKIP Index: [fkIdx_168]
+
+
+--************************************** [Channel]
+
+CREATE TABLE [Channel]
+(
+ [ChannelID]    INT NOT NULL ,
+ [ChannelName]  VARCHAR(50) NOT NULL ,
+ [ChannelCatID] INT NOT NULL ,
+ [ChannelGrID]  INT NOT NULL ,
+
+ CONSTRAINT [PK_Channel] PRIMARY KEY CLUSTERED ([ChannelID] ASC),
+ CONSTRAINT [FK_98] FOREIGN KEY ([ChannelCatID])
+  REFERENCES [ChannelCategory]([ChannelCatID]),
+ CONSTRAINT [FK_107] FOREIGN KEY ([ChannelGrID])
+  REFERENCES [ChannelGroup]([ChannelGrID])
+);
+GO
+
+
+--SKIP Index: [fkIdx_98]
+
+--SKIP Index: [fkIdx_107]
+
+
+--************************************** [Program]
+
+CREATE TABLE [Program]
+(
+ [ProgramID]     INT NOT NULL ,
+ [StartTimeID]   INT NOT NULL ,
+ [ChannelID]     INT NOT NULL ,
+ [TargetGroupID] INT NOT NULL ,
+ [DateID]        INT NOT NULL ,
+ [TitleID]       INT NOT NULL ,
+ [AMR]           INT NULL ,
+ [AMR%]          DECIMAL(10,3) NULL ,
+ [SHR%]          DECIMAL(10,3) NULL ,
+ [RCH%]          DECIMAL(10,3) NULL ,
+ [RCH]           INT NULL ,
+ [MediaDateID]   INT NOT NULL ,
+ [DurationID]    INT NOT NULL ,
+
+ CONSTRAINT [PK_Program] PRIMARY KEY CLUSTERED ([ProgramID] ASC),
+ CONSTRAINT [FK_54] FOREIGN KEY ([ChannelID])
+  REFERENCES [Channel]([ChannelID]),
+ CONSTRAINT [FK_62] FOREIGN KEY ([TargetGroupID])
+  REFERENCES [TargetGroup]([TargetGroupID]),
+ CONSTRAINT [FK_66] FOREIGN KEY ([DateID])
+  REFERENCES [Date]([DateID]),
+ CONSTRAINT [FK_78] FOREIGN KEY ([TitleID])
+  REFERENCES [Title]([TitleID]),
+ CONSTRAINT [FK_146] FOREIGN KEY ([MediaDateID])
+  REFERENCES [MediaDate]([MediaDateID]),
+ CONSTRAINT [FK_176] FOREIGN KEY ([StartTimeID])
+  REFERENCES [StartTime]([StartTimeID]),
+ CONSTRAINT [FK_180] FOREIGN KEY ([DurationID])
+  REFERENCES [Duration]([DurationID])
+);
+GO
